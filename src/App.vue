@@ -2,13 +2,12 @@
 <!--  <img alt="Vue logo" src="./assets/logo.png">-->
 <!--  <HelloWorld msg="Welcome to Your Vue.js App"/>-->
   <RouterView/>
-    <Home.vue/>
-    <ScnMakePage.vue/>
-    <ScnSelectPage.vue/>
+    <OriginalPage.vue/>
+    <MakeAtBar.vue/>
+    <MakeAtHome.vue/>
 </template>
 
 <script>
-//import Header from "@/components/Header.vue";
 // import Footer from "@/components/Footer.vue";
 //import store from "@/scripts/store";
 //import axios from "axios";
@@ -20,8 +19,9 @@ import {watch} from "vue";
 export default {
     name: 'App',
     components: {
+      //OriginalPage,
         // Footer,
-        //Header
+      //VueHeader
     },
     setup(){
         const route = useRoute();

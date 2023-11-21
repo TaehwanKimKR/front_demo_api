@@ -3,7 +3,8 @@ import {createApp} from 'vue'
 import router from "@/scripts/router"
 import App from './App.vue'
 import axios from 'axios'
-
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap'
 
 // import "@baklavajs/plugin-renderer-vue3/dist/styles.css";
 //import "/src/assets/nstyle.scss";
@@ -15,7 +16,7 @@ import axios from 'axios'
 
 const app=createApp(App)
 
-axios.defaults.baseURL = "http://localhost:8081"
+// axios.defaults.baseURL = "http://localhost"
 app.config.globalProperties.$axios = axios;
-app.config.globalProperties.$serverUrl = 'http://localhost:8081'
+// app.config.globalProperties.$serverUrl = 'http://localhost'
 app.use(router).mount('#app')
