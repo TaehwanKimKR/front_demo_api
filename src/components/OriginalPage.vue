@@ -239,8 +239,8 @@ export default {
 }
 .cbutton{
   position: absolute;
-  top: 80%;
-  left: 81%;
-  transform: translate(-50%, -50%);
+  right:0px;
+    bottom:0px;
+  //transform: translate(-50%, -50%);
 }
 </style>

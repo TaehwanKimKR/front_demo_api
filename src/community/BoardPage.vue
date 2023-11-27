@@ -3,10 +3,12 @@
   <div class="background">
     <div class="list_cont">
     <div class="comucont">
-    <div class="common-buttons">
+        <div style="font-family: 'Playball', cursive; font-size: 50px;">Community</div>
+
+        <div class="common-buttons">
       <button type="button" class="w3-button w3-round w3-blue-gray" v-on:click="fnWrite">등록</button>
     </div>
-    <table class="w3-table-all">
+    <table class="w3-table-all" style="width:80%; margin-left:auto; margin-right:auto;">
       <thead>
       <tr>
         <th>No</th>

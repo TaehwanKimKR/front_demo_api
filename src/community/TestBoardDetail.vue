@@ -7,6 +7,7 @@
 <!--      <button type="button" class="w3-button w3-round w3-red" v-on:click="fnDelete">삭제</button>&nbsp;-->
 <!--      <button type="button" class="w3-button w3-round w3-gray" v-on:click="fnList">목록</button>-->
 <!--    </div>-->
+        <div style="font-family: 'Playball', cursive; font-size: 50px;">Community</div>
     <div class="board-titles">
       <div style="float:left;">Title : {{ title }}&nbsp&nbsp | </div>
       <div style="float:left;">

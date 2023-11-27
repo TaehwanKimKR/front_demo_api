@@ -6,17 +6,20 @@
       <label class="sdisctext" style="font-size: 12px;">Do you want to create your own cocktail?</label>
       <label class="tdisctext" style="font-size: 12px;">Try a cocktail that is unique to you and doesn't exist in the world!</label>
     </div>
+
     <div class="inputcont border border-2 border-dark rounded-3">
-      <label class="sqbutton" style="padding: 1vh 20px; margin-right: 10px;">Search</label>
+      <label class="sqbutton" style="padding: 1vh 20px; margin-right: 10px; font-style: italic;">Search</label>
       <!--        <button type="button" class="sqbutton btn btn-outline-light rounded-2" style="padding: 1vh 20px; margin-right: 10px;" @click="sendQuest()">Search</button>-->
       <input class="alcin dark-input border border-primary rounded-2" type="text" style = "text-align: center; margin-left: 5px; margin-top: 60px; margin-right: 10px;" placeholder="Taste" @input="taste=$event.target.value"/>
       <input class="drin dark-input border border-danger rounded-2" type="text" style = "text-align: center; margin-right: 10px;" placeholder="Color" @input="co=$event.target.value"/>
       <input class="syrin dark-input border border-warning rounded-2" type="text" style = "text-align: center; margin-right: 10px;" placeholder="ABV" @input="abv=$event.target.value"/>
       <button type="button" class="askbtn btn btn-outline-dark rounded-2" @click="sendQuest()">Ask!</button>
     </div>
+
     <div class="outputcont border border-2 border-dark rounded-3">
-      <div style = "color: black; text-align: center; font-size: 30px;">Recipe</div>
-      <div v-html="ptext"></div>
+      <div style = "color: black; left:0px; font-size: 30px; font-style: italic;">Recipe</div>
+        <div class="ccont" style="white-space:pre-line; overflow-y:scroll; text-align: center;">{{ ptext }}</div>
+<!--      <div v-html="ptext"></div>-->
       <!--            <div>{{ptext}}</div>-->
       <!--                <div v-for="(ans, ansIndex) in items" :key="ansIndex">-->
       <!--&lt;!&ndash;                    <textarea readonly v-model="ans.text"></textarea>&ndash;&gt;-->
@@ -41,6 +44,7 @@ export default {
       co:'',
       abv:'',
       ptext:'',
+        tttext:'1. 무지개빛의 색깔을 내기 위해 큐브 아이스를 컵에 채워줍니다.\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마\n가나다라마',
     }
   },
   methods:{
@@ -107,13 +111,12 @@ export default {
 }
 .outputcont{
   position: absolute;
-  top: 100%;
+  top: 73%;
   left: 50%;
-  height: 100vh;
-  width: 100vh;
-  transform: translate(-50%, -50%);
+  height: 45%;
+  width: 80%;
   background-color: rgba(255, 255, 255, 0.77);
-  margin-top : 20px;
+  //margin-top : 20px;
   font-size: 15px;
   font-family: 'Noto Sans KR', sans-serif;
 }
@@ -177,5 +180,9 @@ export default {
   resize: none;
   border: 1px solid rgb(42, 42, 42);
   width: 100%;
+}
+.ccont{
+    height:100%;
+    width:100%;
 }
 </style>

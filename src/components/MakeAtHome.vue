@@ -7,7 +7,7 @@
       <label class="tdisctext" style="font-size: 12px;">I will provide you with recipes that can be made with those ingredients</label>
     </div>
     <div class="inputcont border border-2 border-dark rounded-3">
-      <label class="sqbutton" style="padding: 1vh 20px; margin-right: 10px;">Search</label>
+      <label class="sqbutton" style="padding: 1vh 20px; margin-right: 10px; font-style: italic;">Search</label>
       <!--        <button type="button" class="sqbutton btn btn-outline-light rounded-2" style="padding: 1vh 20px; margin-right: 10px;" @click="sendQuest()">Search</button>-->
       <input class="alcin dark-input border border-primary rounded-2" type="text" style = "text-align: center; margin-left: 5px; margin-top: 60px; margin-right: 10px;" placeholder="alchol" @input="alc=$event.target.value"/>
       <input class="drin dark-input border border-danger rounded-2" type="text" style = "text-align: center; margin-right: 10px;" placeholder="drink" @input="drn=$event.target.value"/>
@@ -15,7 +15,7 @@
       <button type="button" class="askbtn btn btn-outline-dark rounded-2" @click="sendQuest()">Ask!</button>
     </div>
     <div class="outputcont border border-2 border-dark rounded-3">
-      <div style = "color: black; text-align: center; font-size: 30px;">Recipe</div>
+      <div style = "color: black; text-align: center; font-size: 30px; font-style: italic;">Recipe</div>
       <div style = "color: black; margin-left : 10px; font-size: 15px;">Alcohol : {{ items.Alchol }} ml</div>
       <div style = "color: black; margin-left : 10px; font-size: 15px;">Drink : {{ items.Drink }} ml</div>
       <div style = "color: black; margin-left : 10px; font-size: 15px;">Syrup : {{ items.Syrup }} ml</div>
