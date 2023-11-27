@@ -18,7 +18,10 @@
             <router-link to="/MakeAtHome" class="nav-link">Make at Home</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <router-link to="/Board" class="nav-link">Board</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/Board" class="nav-link">Login</router-link>
           </li>
         </ul>
       </div>

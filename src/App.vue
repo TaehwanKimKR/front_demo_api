@@ -5,6 +5,8 @@
     <OriginalPage.vue/>
     <MakeAtBar.vue/>
     <MakeAtHome.vue/>
+    <BoardPage.vue/>
+  <Shop.vue/>
 </template>
 
 <script>
@@ -16,8 +18,10 @@ import {watch} from "vue";
 
 
 
+
 export default {
     name: 'App',
+
     components: {
       //OriginalPage,
         // Footer,
